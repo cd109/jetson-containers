@@ -79,6 +79,8 @@ RUN pip3 install pandas --verbose
 
 RUN apt-get update
 
+sudo aptitude install apt-utils
+
 RUN apt-get install --yes --no-install-recommends apt-utils 
 RUN apt-get install --yes --no-install-recommends apt-transport-https
 
