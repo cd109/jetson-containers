@@ -78,7 +78,7 @@ RUN pip3 install scikit-learn --verbose
 RUN pip3 install pandas --verbose
 
 RUN apt-get update
-
+RUN apt-get install --assume-yes apt-utils
 sudo aptitude install apt-utils
 
 RUN apt-get install --yes --no-install-recommends apt-utils 
