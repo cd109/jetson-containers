@@ -76,7 +76,12 @@ RUN pip3 install onnx --verbose
 RUN pip3 install scipy --verbose
 RUN pip3 install scikit-learn --verbose
 RUN pip3 install pandas --verbose
-RUN sudo apt-get update && sudo apt-get install -y --no-install-recommends apt-utils
+
+RUN apt-get update
+
+RUN apt-get install --yes --no-install-recommends apt-utils 
+RUN apt-get install --yes --no-install-recommends apt-transport-https
+
 #RUN pip3 install 'pillow<7'
 
 
